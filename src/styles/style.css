@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+:root{
+    --principal-text: "Montserrat", sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #ff8800, #000);
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--principal-text);
+    margin: 0;
+    padding: 0px;
+}
+
+@media (max-width: 1200px){
+    .my-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 90px;
+    }
+
+    .menu-header{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        margin-bottom: 90px;
+    }
+
+    .botoes-header{
+        background-color: rgba(220, 146, 10, 0.589);
+        border: #000;
+        border-radius: 20px;
+        width: 80px;
+        height: 35px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .my-logo{
+        display: flex;
+        width: 150px;
+        margin: 15px;
+    }
+
+    .o-home{
+        width: 250px;
+        border: orange;
+        border-radius: 25px;
+    }
+
+    .my-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 390px;
+    }
+
+    .agenda{
+        display: flex;
+        margin: 20px;
+        width: 390px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+
+    .top-description{
+        display: flex;
+        margin: 35px;
+    }
+
+    .top-description > *{
+        margin: 5px;
+    }
+
+    .calendario{
+        width: 40px;
+        transform: rotate(-12deg);
+    }
+
+    .text p{
+        font-family: "Rouge Script", cursive;
+        color: orange;
+        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    .text h2{
+        font-size: 20px;
+        color: orange;
+    }
+
+    .dias-da-semana{
+        display: flex;
+        width: 390px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .dia{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        background-color: rgba(222, 184, 135, 0.015);
+        border-radius: 25px;
+        box-shadow: 0px 3px 3px 2px #000;
+        margin: 17px;
+        font-weight: bold;
+    }
+
+    .box-data{
+        display: flex;
+        align-items: center;
+    }
+
+    .horario, .local{
+        margin: 12px;
+    }
+
+    .contatos{
+        margin: 25px;
+    }
+
+    .divulgacao > *{
+        margin-bottom: 17px;
+    }
+
+    .divulgacao{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 1.5;
+        background: linear-gradient(to right, white, #ff6600);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+
+    .divulgacao p{
+        font-size: 10px;
+        width: 230px;
+    }
+
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 25px;
+    }
+
+
+    .redes img{
+        width: 25px;
+    }
+
+    .sociais, .de-contato{
+        margin: 15px;
+    }
+
+    .box-insta, .box-wpp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 25px;
+    }
+
+    .box-wpp, .box-insta p{
+        color: white;
+        
+    }
+
+    .insta, .wpp{
+        margin: 12px;
+    }
+
+}
