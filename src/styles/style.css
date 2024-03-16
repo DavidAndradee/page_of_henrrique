@@ -126,13 +126,17 @@ body{
         font-weight: bold;
     }
 
+    .dia p {
+        text-align: center;
+    }
+
     .box-data{
         display: flex;
         align-items: center;
     }
 
     .horario, .local{
-        margin: 12px;
+        margin: 8px;
     }
 
     .contatos{
