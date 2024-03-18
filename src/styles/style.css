@@ -9,51 +9,150 @@
 }
 
 body{
-    background: linear-gradient(to right, #ff8800, #000);
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    overflow-x:hidden ;
+}
+
+.plano-de-fundo{
+    display: flex;
+    background: linear-gradient(to right, #ff8800, #000);
     font-family: var(--principal-text);
     margin: 0;
-    padding: 0px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.o-home-desk, .outra-do-home-desk{
+    margin: 0;
+    height: 134vh;
+    opacity: 0.4;
+    z-index: 1;
+    position: absolute;
+}
+
+.outra-do-home-desk{
+    margin-left: 1010px;
+}
+
+.botoes-header{
+    display: none;
 }
 
 .my-header{
     display: flex;
-    width: auto;
-}
-
-.menu-header{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    width: auto;
-    margin: 25px;
-}
-
-.botoes-header{
-   display: none;
 }
 
 .my-logo{
     height: 250px;
-    width: 450px;
+    width: 550px;
 }
 
-.foto{
-    margin: 35px;
-    align-items: center;
-    justify-content: center;
-}
-
-.o-home{
-    height: absolute;
-    border-radius: 35px;
-    border-top-left-radius: 150px;
-}
+.o-home, .outra-do-home{display: none;}
 
 .my-main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contatos{
+    margin: 25px;
+}
+
+.divulgacao > *{
+    margin-bottom: 17px;
+}
+
+.divulgacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    background: linear-gradient(to right, white, #ff6600);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.divulgacao h1{
+    font-size: 35px;
+}
+
+.divulgacao p{
+    font-size: 15px;
+    width: 550px;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    flex-direction: row-reverse;
+}
+
+.insta img{
+    width: 35px;
+    border: 2px groove #993399ac;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.wpp img{
+    width: 35px;
+    border: 2px groove rgba(172, 255, 47, 0.67);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.box-sua-musica img{
+    width: 35px;
+    border: 2px groove #00f7ff88;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tiktok img{
+    width: 35px;
+    border: 2px groove rgba(255, 255, 255, 0.185);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sociais, .de-contato{
+    margin: 15px;
+}
+
+.box-insta, .box-wpp, .box-sua-musica, .box-tiktok{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 280px;
+    height: 200px;
+}
+
+.box-wpp, .box-insta, .box-sua-musica, .box-tiktok p{
+    color: white;
+    
+}
+
+.insta, .wpp, .tiktok, .sua-musica{
+    margin: 12px;
+}
+
+.insta, .wpp, .tiktok p, .sua-musica p{
+    color: rgba(255, 255, 255, 0.39);
 }
 
 
@@ -148,344 +247,4 @@ body{
 
 .horario, .local{
     margin-right: 25px;
-}
-
-.contatos{
-    margin: 25px;
-}
-
-.divulgacao > *{
-    margin-bottom: 17px;
-}
-
-.divulgacao{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    line-height: 1.5;
-    background: linear-gradient(to right, white, #ff6600);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
-}
-
-.redes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 25px;
-}
-
-.insta img{
-    width: 35px;
-    border: 2px groove #993399ac;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.wpp img{
-    width: 35px;
-    border: 2px groove rgba(172, 255, 47, 0.67);
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.box-sua-musica img{
-    width: 35px;
-    border: 2px groove #00f7ff88;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.tiktok img{
-    width: 35px;
-    border: 2px groove rgba(255, 255, 255, 0.185);
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.sociais, .de-contato{
-    margin: 15px;
-}
-
-.box-insta, .box-wpp{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.5;
-    width: 280px;
-    height: 200px;
-}
-
-.box-wpp, .box-insta p{
-    color: white;
-    
-}
-
-.insta, .wpp{
-    margin: 12px;
-}
-
-.insta p, .wpp p{
-    color: rgba(255, 255, 255, 0.39);
-}
-
-
-
-@media (max-width: 1200px){
-
-    body{
-        background: linear-gradient(to right, #ff8800, #000);
-        height: 100vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: var(--principal-text);
-        margin: 0;
-        padding: 0px;
-    }
-
-    .my-header{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .menu-header{
-        display: flex;
-        justify-self: center;
-        align-items: center;
-    }
-
-
-    .botoes-header{
-        background-color: rgba(220, 146, 10, 0.589);
-        border: #000;
-        border-radius: 20px;
-        width: 85px;
-        height: 40px;
-        margin: 25px;
-        display: flex;
-        text-decoration: none;
-        align-items: center;
-        justify-content: center;
-        font-size: 12px;
-        font-weight: bold;
-        color: #000;
-        border: 0.5px solid #ff9500;
-        border-radius: 15px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .foto{
-        margin: 0;
-        width: 100%;
-        position: relative;
-    }
-
-    .my-logo{
-        width: 390px;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .o-home{
-        width: 150px;
-        margin-right: 75px;
-        opacity: 0.7;
-        z-index: 1;
-    }
-
-    .outra-do-home{
-        width: 150px;
-        height: 200px;
-        margin: 0;
-        opacity: 0.7;
-        z-index: 1;
-        position: relative;
-    }
-
-    .my-main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        width: 390px;
-        border: 0.8px solid #0e0d0d7b;
-        border-radius: 15px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    }
-
-
-    .agenda{
-        display: flex;
-        margin: 20px;
-        width: 390px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 110px;
-    }
-
-    .top-description{
-        display: flex;
-        margin-bottom: 70px;
-    }
-
-    .top-description > *{
-        margin: 5px;
-    }
-
-    .calendario{
-        width: 70px;
-        transform: rotate(-12deg);
-    }
-
-    .text p{
-        font-family: "Whisper", cursive;
-        margin-left: 15px;
-        font-size: 50px;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.605), #ff6600);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-
-    .text h2{
-        font-size: 35px;
-        height: 45px;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.605), #ff6600);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-
-    .dias-da-semana{
-        display: flex;
-        width: 390px;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .day{
-        margin-right: 215px;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.952), #ff6600);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-    }
-
-    .dia{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(222, 184, 135, 0.015);
-        border-radius: 25px;
-        box-shadow: 0px 2px 2px 2px #00000088;
-        margin: 17px;
-        font-weight: bold;
-    }
-
-    .dia p {
-        text-align: center;
-    }
-
-    .box-data{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 350px;
-        background: linear-gradient(to right, #ff6600, rgba(255, 255, 255, 0.749));
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-    }
-
-    .box-data img{
-        width: 30px;
-        opacity: 0.5;
-        margin: 8px;
-    }
-
-    .horario, .local{
-        margin-right: 25px;
-    }
-
-    .divulgacao > *{
-        margin-bottom: 17px;
-    }
-
-    .divulgacao{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        line-height: 1.5;
-        background: linear-gradient(to right, white, #ff6600);
-        -webkit-background-clip: text;
-        color: transparent;
-        font-weight: bold;
-        margin-bottom: 150px;
-    }
-
-    .divulgacao h1{
-        width: 400px
-    }
-
-    .divulgacao p{
-        font-size: 12px;
-        width: 280px;
-    }
-
-    .redes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 25px;
-    }
-
-    .sociais, .de-contato{
-        margin: 15px;
-    }
-
-    .box-insta, .box-wpp, .box-sua-musica, .box-tiktok{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: 16px;
-        line-height: 1.5;
-        width: 280px;
-        height: 200px;
-    }
-
-    .box-wpp, .box-insta, .box-sua-musica, .box-tiktok p{
-        color: white;
-        
-    }
-
-    .insta, .wpp, .sua-musica, .tiktok{
-        margin: 12px;
-    }
-
-    .insta, .wpp, .sua-musica, .tiktok p{
-        color: rgba(255, 255, 255, 0.39);
-    }
-
 }
