@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/centra-control.css">
+
+    <title>HL Central</title>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Atualizar Agenda Semanal</h1>
+        <p>Segunda</p>
+        <form action="" method="get">
+            <label for="novadata">Local:</label>
+            <input type="text" id="novodata" name="novodata">
+            <label for="newclock">Horário:</label>
+            <select class="hour" id="horario">
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+                <option value="22:30">22:30</option>
+                <option value="23:00">23:00</option>
+                <option value="23:30">23:30</option>
+                <option value="00:00">00:00</option>
+            </select>
+            <button onclick="obterHorarioSelecionado()">Update</button>
+        </form>
+        <p>Terça</p>
+        <form action="outra_pagina.html" method="get">
+            <label for="novadata">Local:</label>
+            <input type="text" id="novodata" name="novodata">
+            <label for="newclock">Horário:</label>
+            <select class="hour" id="horario-terca">
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+                <option value="22:30">22:30</option>
+                <option value="23:00">23:00</option>
+                <option value="23:30">23:30</option>
+                <option value="00:00">00:00</option>
+            </select>
+            <button onclick="obterHorarioSelecionado()">Update</button>
+        </form>
+        <p>Quarta</p>
+        <form action="outra_pagina.html" method="get">
+            <label for="novadata">Local:</label>
+            <input type="text" id="novodata" name="novodata">
+            <label for="newclock">Horário:</label>
+            <select class="hour" name="horario" id="horario-quarta">
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+                <option value="22:30">22:30</option>
+                <option value="23:00">23:00</option>
+                <option value="23:30">23:30</option>
+                <option value="00:00">00:00</option>
+            </select>
+            <button onclick="obterHorarioSelecionado()">Update</button>
+        </form>
+        <p>Quinta</p>
+        <form action="outra_pagina.html" method="get">
+            <label for="novadata">Local:</label>
+            <input type="text" id="novodata" name="novodata">
+            <label for="newclock">Horário:</label>
+            <select class="hour" name="horario" id="horario-quinta">
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+                <option value="22:30">22:30</option>
+                <option value="23:00">23:00</option>
+                <option value="23:30">23:30</option>
+                <option value="00:00">00:00</option>
+            </select>
+            <button onclick="obterHorarioSelecionado()">Update</button>
+        </form>
+        <p>Sexta</p>
+        <form action="outra_pagina.html" method="get">
+            <label for="novadata">Local:</label>
+            <input type="text" id="novodata" name="novodata">
+            <label for="newclock">Horário:</label>
+            <select class="hour" name="horario" id="horario-sexta">
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+                <option value="22:30">22:30</option>
+                <option value="23:00">23:00</option>
+                <option value="23:30">23:30</option>
+                <option value="00:00">00:00</option>
+            </select>
+            <button onclick="obterHorarioSelecionado()">Update</button>
+        </form>
+        <p>Sabádo</p>
+        <form action="outra_pagina.html" method="get">
+            <label for="novadata">Local:</label>
+            <input type="text" id="novodata" name="novodata">
+            <label for="newclock">Horário:</label>
+            <select class="hour" name="horario" id="horario-sab">
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+                <option value="22:30">22:30</option>
+                <option value="23:00">23:00</option>
+                <option value="23:30">23:30</option>
+                <option value="00:00">00:00</option>
+            </select>
+            <button onclick="obterHorarioSelecionado()">Update</button>
+        </form>
+        <p>Domingo</p>
+        <form action="outra_pagina.html" method="get">
+            <label for="novadata">Local:</label>
+            <input type="text" id="novodata" >
+            <label for="newclock">Horário:</label>
+            <select class="hour" name="horario" id="horario-domingo">
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="18:30">18:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+                <option value="21:30">21:30</option>
+                <option value="22:00">22:00</option>
+                <option value="22:30">22:30</option>
+                <option value="23:00">23:00</option>
+                <option value="23:30">23:30</option>
+                <option value="00:00">00:00</option>
+            </select>
+            <button onclick="obterHorarioSelecionado()">Update</button>
+        </form>
+    </div>
+    <a class="home" href="index.html">Home</a>
+    <script src="control.html"></script>
+</body>
+</html>

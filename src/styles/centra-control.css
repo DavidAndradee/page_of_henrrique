@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+
+
+body{
+    background: linear-gradient(to right, #ff8800, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.o-home-desk{
+    margin: 0;
+    height: 135vh;
+    opacity: 0.1;
+    z-index: 1;
+    position: absolute;
+}
+
+h1{ 
+    height: 50px;
+    font-family: "Whisper", cursive;
+    font-size: 45px;
+    margin: 35px;
+}
+
+.conteiner{
+    display: flex;
+    margin: 10px;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    background: linear-gradient(to right, #ff8800, #000);
+    width: 750px;
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 5px 8px, rgba(0, 0, 0, 0.12) 0px 1px 14px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.605), #ff6600);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+p{
+    margin: 8px;
+    margin-right: 600px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.home{
+    margin: 20px;
+    background-color: rgba(220, 146, 10, 0.589);
+    border: #000;
+    border-radius: 20px;
+    width: 110px;
+    height: 40px;
+    margin: 25px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bolder;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.605), #ff6600);
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 0.5px solid #ff9500;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hour{
+    height: 35px;
+    margin: 20px;
+    border: 0.5px solid #ff9500;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.334);
+}
+
+.hour option {
+    color: black; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.hour:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra ao focar */
+}
+
+input, button{
+    height: 35px;
+    margin: 15px;
+    border: 0.5px solid #ff9500;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.605), #ff6600);
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 0.5px solid #ff9500;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+select{
+    width: 90px;
+    cursor: pointer;
+}
+
+button{
+    background-color: transparent;
+    color: transparent;
+    border: 0.5px solid #ff9500;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80px;
+}
